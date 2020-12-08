@@ -17,6 +17,7 @@ export default function About() {
             <ul>
               <li>Next.JS</li>
               <li>Tailwind CSS</li>
+              <li>Graph CMS</li>
             </ul>
 
          <Button variant="info" size="lg" label="Know More" />
