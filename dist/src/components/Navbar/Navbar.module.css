@@ -1,0 +1,313 @@
+.nav {
+
+    border-bottom: 1px solid #ddd;
+
+    display:flex;
+
+    width: 100%;
+
+    background: #fff;
+
+    /* background: #387EF5; */
+
+}
+
+.nav .navBrand{
+
+    color: #4200ff;
+
+    font-weight: bold;
+
+    font-size: 1.6em;
+
+}
+
+.nav a{
+
+    padding: 0 15px;
+
+    color : #111;
+
+    font-size: 1.2em;
+
+}
+
+.nav a:hover {
+
+    color: #4200ff;
+
+}
+
+
+
+.nav .navWrapper{
+
+    position: relative;
+
+    z-index: 1;
+
+    height: 80px;
+
+    width: 100%;
+
+}
+
+
+
+.nav .navWrapperInner{
+
+    display: flex;
+
+    -webkit-box-pack: justify;
+
+    -webkit-box-align: stretch;
+
+    justify-content:space-between;
+
+    align-items:stretch;
+
+    height:100%;
+
+}
+
+
+
+.nav .navWrapperInner .navLeftPart{
+
+    display: flex;
+
+    -webkit-box-align: center;
+
+    align-items:center;
+
+    white-space:nowrap;
+
+}
+
+
+
+.nav .navWrapperInner .navRightPart{
+
+    display: flex;
+
+    -webkit-box-align: center;
+
+    align-items: center;
+
+    -webkit-box-pack:end;
+
+    justify-content:flex-end;
+
+}
+
+
+
+.nav .navWrapperInner .navRightPart .navLinks {
+
+    transition: all .5s;
+
+}
+
+
+
+.toggler{
+
+    display:none;
+
+    float:right;
+
+}
+
+.burger{
+
+    display:none;
+
+}
+
+
+
+/* Hamburger Menu Icon */
+
+.bar1, .bar2, .bar3 {
+
+    width: 25px;
+
+    height: 2px;
+
+    background-color: #111;
+
+    margin: 9px 0;
+
+    transition: 0.4s;
+
+  }
+
+
+
+  .change .bar1 {
+
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+
+    transform: rotate(-45deg) translate(-9px, 6px);
+
+  }
+
+
+
+  .change .bar2 {opacity: 0;}
+
+
+
+  .change .bar3 {
+
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+
+    transform: rotate(45deg) translate(-8px, -8px);
+
+  }
+
+
+
+  /* Toggle Menu */
+
+  .toggleMenu{
+
+      background-color: #f4f4f4;
+
+      text-align: center;
+
+      display:none;
+
+      margin-left: auto;
+
+      margin-right: auto;
+
+      width: 100%;
+
+      border: 1px solid #eaeaea;
+
+      transition: all .3s;
+
+  }
+
+  .toggleMenu .toggleNavLinks{
+
+    transition: all .5s;
+
+    display: block;
+
+    list-style:none;
+
+  }
+
+  .toggleMenu .toggleNavLinks li{
+
+      padding: 10px;
+
+  }
+
+  .toggleMenu .toggleNavLinks li a{
+
+    color: #111111;
+
+    font-weight: 500;
+
+ }
+
+  .toggleMenu .toggleNavLinks li a:hover{
+
+      color: #4200ff;
+
+  }
+
+
+
+/* For Tablet */
+
+@media (max-width:767px) and (min-width: 240px){
+
+    .nav .navWrapperInner .navRightPart .navLinks {
+
+        display:none;
+
+    }
+
+    .burger{
+
+        display:block;
+
+    }
+
+    .toggleMenu{
+
+        display:block;
+
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .nav .navWrapper{
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+
+
+  }
+
+
+
+/* For Laptop */
+
+@media (max-width:1024px){
+
+    .nav .navWrapper{
+
+        padding-left:30px;
+
+        padding-right:30px;
+
+    }
+
+}
+
+
+
+/* For Large Screens */
+
+@media (max-width:1440px) and (min-width:1025px){
+
+    .nav .navWrapper{
+
+        padding-left:30px;
+
+        padding-right:30px;
+
+    }
+
+}
+
+
+
+/* For Larger Screens */
+
+@media (max-width:1920px) and (min-width:1441px){
+
+    .nav .navWrapper{
+
+        padding-left:50px;
+
+        padding-right:50px;
+
+    }
+
+
+
+}
